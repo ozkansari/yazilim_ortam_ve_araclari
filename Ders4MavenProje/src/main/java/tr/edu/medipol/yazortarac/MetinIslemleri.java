@@ -8,9 +8,14 @@ public class MetinIslemleri {
 		
 		String metin = "Besiktas Jimnastik Kulubu";
 		
-		String sonuc = WordUtils.initials(metin);
+		String sonuc = basHarflerineKisalt(metin);
 		
 		System.out.println(metin + " -> " + sonuc);
+	}
+
+	protected static String basHarflerineKisalt(String metin) {
+		String sonuc = WordUtils.initials(metin);
+		return sonuc;
 	}
 
 }
